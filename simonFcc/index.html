@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Simon Says</title>
+  <meta name="author" content="Luke King">
+  <meta name="description" content="Web app mimicing the clasic Simon Game">
+  <meta name="keywords" content="keywords,here">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Simon Says</h1>
+  <div id="main" class="main-border-style">
+    
+    <div id="main-a">
+      <div id="green" class="main-border-style box-shadow hoverPointer" data-place="0"></div>
+      <div id="red" class="main-border-style box-shadow hoverPointer" data-place="1"></div>
+    </div>
+    <div id="main-b">
+      <div id="yellow" class="main-border-style box-shadow hoverPointer" data-place="2"></div>
+      <div id="blue" class="main-border-style box-shadow hoverPointer" data-place="3"></div>
+    </div>
+    <div id="controls" class="main-border-style">
+        <h2>Simon<sup>&reg;</sup></h2>
+        <div>
+          <div id="cycles" class="flex-col"><p class="align-center">0</p><p>count</p></div>
+          <div id="start" class="flex-col"><input type="button" id="start-btn" class="hoverPointer"><p class="no-margin">start</p></div>
+          <div id="strict" class="flex-col"><input type="button" id="strict-btn"  class="hoverPointer"><p class="no-margin">strict</p></div>
+        </div>
+      </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
